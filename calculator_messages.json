@@ -1,0 +1,12 @@
+{
+  "welcome": "=========Welcome to Calcualtor Program!=========",
+  "end": "=========BYE BYE=========",
+  "prompt1": "What's your first number?",
+  "prompt2": "What's your second number?",
+  "warn": "Please Insert Correct Number",
+  "operation": "What operation do you want to perform?\n1.Addition 2.Subtraction 3. Multification 4. Division",
+  "confirm1": "The number you input is",
+  "confirm2": "The operation you want to perform is",
+  "output": "After the operation, the result is",
+  "again": "========Do you want to do another calculation? y/n========\n"
+}
