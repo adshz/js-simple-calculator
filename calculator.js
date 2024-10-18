@@ -29,7 +29,6 @@ function  calculation() {
   number2 = Number(number2);
 
   programPrompt(msg_list["confirm1"] + ` ${number1} and ${number2}\n`);
-
   programPrompt(msg_list["operation"]);
   let opt = readline.question();
 
@@ -70,11 +69,11 @@ function  calculation() {
 }
 
 programPrompt(msg_list["welcome"]);
-calculation();
-let again = readline.question(msg_list["again"]);
-while (again === "yes" || again === "y")
+let again;
+while (1)
 {
   calculation();
   again = readline.question(msg_list["again"]);
+  if (again.trimStart()[0] !== "y") break;
 }
 programPrompt(msg_list["end"]);
