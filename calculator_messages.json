@@ -1,12 +1,151 @@
 {
-  "welcome": "=========Welcome to Calcualtor Program!=========",
-  "end": "=========BYE BYE=========",
-  "prompt1": "What's your first number?",
-  "prompt2": "What's your second number?",
-  "warn": "Please Insert Correct Number",
-  "operation": "What operation do you want to perform?\n1.Addition 2.Subtraction 3. Multification 4. Division",
-  "confirm1": "The number you input is",
-  "confirm2": "The operation you want to perform is",
-  "output": "After the operation, the result is",
-  "again": "========Do you want to do another calculation? y/n========\n"
+  "lang":"Please specifiy the number for language setting.\n1. English\n2. Chinese\n3. German\n4. Spanish\n5. French\n6. Swahili\n7. Portuguese\n8. Italian\n",
+  "en": {
+    "welcome": "=========Welcome to Calculator Program!=========",
+    "end": "=========BYE BYE=========",
+    "prompt1": "What's your first number?",
+    "prompt2": "What's your second number?",
+    "warn": "Please Insert Correct Number",
+    "operation": "What operation do you want to perform?\n1.Addition 2.Subtraction 3. Multiplication 4. Division",
+    "confirm1": "The numbers you input are",
+    "confirm2": "The operation you want to perform is",
+    "output": "After the operation, the result is",
+    "again": "========Do you want to do another calculation? y/n========\n",
+    "opt": {
+      "1": "Addition",
+      "2": "Subtraction",
+      "3": "Multiplication",
+      "4": "Division"},
+    "and":"and"
+  },
+  "zh-CN": {
+    "welcome": "=========欢迎使用最简计算器=========",
+    "end": "=========再见！=========",
+    "prompt1": "请输入第一个数字",
+    "prompt2": "请输入第二个数字",
+    "warn": "请输入正确格式",
+    "operation": "您希望计算器为您做什么？（请输入数字，如输入\"1\"）\n1.加法 2.减法 3. 乘法 4. 除法",
+    "confirm1": "您输入的数字有",
+    "confirm2": "您希望计算器做",
+    "output": "经过计算之后，结果为",
+    "again": "========请问您想计算器继续持续计算吗？（请输入 y或者n)========\n",
+    "opt": {
+      "1": "加法",
+      "2": "减法",
+      "3": "乘法",
+      "4": "除法"},
+    "and": "和"
+  },
+  "de": {
+    "welcome": "=========Willkommen beim Taschenrechner-Programm!=========",
+    "end": "=========AUF WIEDERSEHEN=========",
+    "prompt1": "Wie lautet Ihre erste Zahl?",
+    "prompt2": "Wie lautet Ihre zweite Zahl?",
+    "warn": "Bitte geben Sie eine korrekte Zahl ein",
+    "operation": "Welche Operation möchten Sie durchführen?\n1.Addition 2.Subtraktion 3. Multiplikation 4. Division",
+    "confirm1": "Die von Ihnen eingegebene Zahl ist",
+    "confirm2": "Die Operation, die Sie durchführen möchten, ist",
+    "output": "Nach der Operation ist das Ergebnis",
+    "again": "========Möchten Sie eine weitere Berechnung durchführen? j/n========\n",
+    "opt": {
+      "1": "Addition",
+      "2": "Subtraktion",
+      "3": "Multiplikation",
+      "4": "Division"},
+    "and": "und"
+  },
+  "es": {
+    "welcome": "=========¡Bienvenido al Programa de Calculadora!=========",
+    "end": "=========ADIÓS=========",
+    "prompt1": "¿Cuál es su primer número?",
+    "prompt2": "¿Cuál es su segundo número?",
+    "warn": "Por favor, introduzca un número correcto",
+    "operation": "¿Qué operación desea realizar?\n1.Suma 2.Resta 3. Multiplicación 4. División",
+    "confirm1": "El número que ha introducido es",
+    "confirm2": "La operación que desea realizar es",
+    "output": "Después de la operación, el resultado es",
+    "again": "========¿Desea realizar otro cálculo? s/n========\n",
+    "opt": {
+      "1": "Suma",
+      "2": "Resta",
+      "3": "Multiplicación",
+      "4": "División"},
+    "and": "y"
+  },
+  "fr": {
+    "welcome": "=========Bienvenue dans le Programme de Calculatrice !=========",
+    "end": "=========AU REVOIR=========",
+    "prompt1": "Quel est votre premier nombre ?",
+    "prompt2": "Quel est votre deuxième nombre ?",
+    "warn": "Veuillez insérer un nombre correct",
+    "operation": "Quelle opération voulez-vous effectuer ?\n1.Addition 2.Soustraction 3. Multiplication 4. Division",
+    "confirm1": "Le nombre que vous avez saisi est",
+    "confirm2": "L'opération que vous voulez effectuer est",
+    "output": "Après l'opération, le résultat est",
+    "again": "========Voulez-vous faire un autre calcul ? o/n========\n",
+    "opt": {
+      "1": "Addition",
+      "2": "Soustraction",
+      "3": "Multiplication",
+      "4": "Division"
+    },
+    "and": "et"
+  },
+  "sw": {
+    "welcome": "=========Karibu kwenye Programu ya Kikokotoo!=========",
+    "end": "=========KWAHERI=========",
+    "prompt1": "Namba yako ya kwanza ni ipi?",
+    "prompt2": "Namba yako ya pili ni ipi?",
+    "warn": "Tafadhali Ingiza Namba Sahihi",
+    "operation": "Unataka kufanya operesheni gani?\n1.Kuongeza 2.Kutoa 3. Kuzidisha 4. Kugawanya",
+    "confirm1": "Namba uliyoingiza ni",
+    "confirm2": "Operesheni unayotaka kufanya ni",
+    "output": "Baada ya operesheni, matokeo ni",
+    "again": "========Je, unataka kufanya hesabu nyingine? n/h========\n",
+    "opt": {
+      "1": "Kuongeza",
+      "2": "Kutoa",
+      "3": "Kuzidisha",
+      "4": "Kugawanya"
+    },
+    "and": "na"
+  },
+  "pt": {
+    "welcome": "=========Bem-vindo ao Programa de Calculadora!=========",
+    "end": "=========ADEUS=========",
+    "prompt1": "Qual é o seu primeiro número?",
+    "prompt2": "Qual é o seu segundo número?",
+    "warn": "Por favor, Insira o Número Correto",
+    "operation": "Que operação você deseja realizar?\n1.Adição 2.Subtração 3. Multiplicação 4. Divisão",
+    "confirm1": "O número que você inseriu é",
+    "confirm2": "A operação que você deseja realizar é",
+    "output": "Após a operação, o resultado é",
+    "again": "========Deseja fazer outro cálculo? s/n========\n",
+    "opt": {
+      "1": "Adição",
+      "2": "Subtração",
+      "3": "Multiplicação",
+      "4": "Divisão"
+    },
+    "and": "e"
+  },
+  "it": {
+    "welcome": "=========Benvenuto nel Programma Calcolatrice!=========",
+    "end": "=========ARRIVEDERCI=========",
+    "prompt1": "Qual è il tuo primo numero?",
+    "prompt2": "Qual è il tuo secondo numero?",
+    "warn": "Per favore, inserisci un numero corretto",
+    "operation": "Quale operazione vuoi eseguire?\n1.Addizione 2.Sottrazione 3. Moltiplicazione 4. Divisione",
+    "confirm1": "Il numero che hai inserito è",
+    "confirm2": "L'operazione che vuoi eseguire è",
+    "output": "Dopo l'operazione, il risultato è",
+    "again": "========Vuoi fare un altro calcolo? s/n========\n",
+    "opt": {
+      "1": "Addizione",
+      "2": "Sottrazione",
+      "3": "Moltiplicazione",
+      "4": "Divisione"
+    },
+    "and": "e"
+  }
 }
