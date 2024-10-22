@@ -3,8 +3,7 @@ const readline = require("readline-sync");
 const MSG = require("./config.json");
 let LANG = getLanguage();
 main();
-
-// Function 
+// Function
 function  programPrompt(msg) {
   console.log(`=> ${msg}`);
 }
