@@ -101,7 +101,7 @@
     "confirm1": "Namba uliyoingiza ni",
     "confirm2": "Operesheni unayotaka kufanya ni",
     "output": "Baada ya operesheni, matokeo ni",
-    "again": "========Je, unataka kufanya hesabu nyingine? n/h========\n",
+    "again": "========Je, unataka kufanya hesabu nyingine? y/n========\n",
     "opt": {
       "1": "Kuongeza",
       "2": "Kutoa",

@@ -1,7 +1,10 @@
+// Global Variable Setting
 const readline = require("readline-sync");
-const MSG = require("./calculator_messages.json");
+const MSG = require("./config.json");
+let LANG = getLanguage();
+main();
 
-
+// Function 
 function  programPrompt(msg) {
   console.log(`=> ${msg}`);
 }
@@ -68,41 +71,37 @@ function  calculation(number1, opt, number2) {
   return (output);
 }
 
+function  whatLang(lang) {
+  if (lang === "1") {
+    return ("en");
+  } else if (lang === "2") {
+    return ("zh-CN");
+  } else if (lang === "3") {
+    return ("de");
+  } else if (lang === "4") {
+    return ("es");
+  } else if (lang === "5") {
+    return ("fr");
+  } else if (lang === "6") {
+    return ("sw");
+  } else if (lang === "7") {
+    return ("pt");
+  } else if (lang === "8") {
+    return ("it");
+  }
+  return ("en"); // default
+}
+
 function  getLanguage() {
-  let lang = readline.question(MSG["lang"]);
+  programPrompt(MSG["lang"]);
+  let lang = readline.question();
 
   let output;
   while (isInvalid(lang)) {
     programPrompt(MSG["en"]["warn"]);
     lang = readline.question(MSG["lang"]);
   }
-  
-  switch (lang) {
-    case "1":
-      output = "en";
-      break;
-    case "2":
-      output = "zh-CN";
-      break;
-    case "3":
-      output = "de";
-      break;
-    case "4":
-      output = "es";
-      break;
-    case "5":
-      output = "fr";
-      break;
-    case "6":
-      output = "sw";
-      break;
-    case "7":
-      output = "pt";
-      break;
-    case "8":
-      output = "it";
-      break;
-  }
+  output = whatLang(lang);
   return (output);
 }
 
@@ -117,11 +116,21 @@ function  calculator() {
   return (programPrompt(MSG[LANG]["output"] + ` ${output}\n`));
 }
 
-let LANG = getLanguage();
-programPrompt(MSG[LANG]["welcome"])
-while (1) {
-  calculator();
-  let again = readline.question(MSG[LANG]["again"]);
-  if (again.trimStart()[0] !== "y") break;
+function  checkCalAgain(answer) {
+  if (answer === "y" || answer === "j" || answer === "o" || answer === "s") {
+    return (1);
+  } else {
+    return (0);
+  }
 }
-programPrompt(MSG[LANG]["end"]);
+
+function main() {
+  programPrompt(MSG[LANG]["welcome"]);
+  while (1) {
+    calculator();
+    let calAgain = readline.question(MSG[LANG]["again"]);
+    let answer = calAgain.trimStart()[0];
+    if (checkCalAgain(answer) !== 1) break;
+  }
+  return (programPrompt(MSG[LANG]["end"]));
+}
